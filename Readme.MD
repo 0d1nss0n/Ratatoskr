@@ -6,7 +6,7 @@ This is a Python script that allows you to hide and reveal messages using stegan
 
 The script uses the `stegano` library to perform steganography operations. It provides a command-line interface for users to hide messages within images and later reveal those messages using a password.
 
-![alt text](https://raw.githubusercontent.com/0d1nss0n/Ratatosrk/main/img/ratatoskr.png)
+![alt text](https://raw.githubusercontent.com/0d1nss0n/Ratatoskr/main/img/ratatoskr.png)
 
 ## Features
 
