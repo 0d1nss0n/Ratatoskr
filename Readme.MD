@@ -2,33 +2,19 @@
 
 ## Description
 
-This is a Python script that allows you to hide and reveal messages using steganography techniques. Steganography is the practice of concealing messages or information within other non-secret data, such as images.
+Ratatoskr is a sophisticated Python script that leverages steganography to conceal and reveal messages within images. Utilizing the `stegano` library for steganography tasks, Ratatoskr introduces an additional layer of security by encrypting messages with a password before hiding them. The script's innovation lies in its encryption method, which incorporates a salt to ensure that each encryption is unique, significantly enhancing the security of the hidden message.
 
-The script uses the `stegano` library to perform steganography operations. It provides a command-line interface for users to hide messages within images and later reveal those messages using a password.
-
-![alt text](https://raw.githubusercontent.com/0d1nss0n/Ratatoskr/main/img/ratatoskr.png)
+![Ratatoskr](https://raw.githubusercontent.com/0d1nss0n/Ratatoskr/main/img/ratatoskr.png "Ratatoskr Steganography Tool")
 
 ## Features
 
-- Hide a message within an image using a password.
-- Reveal a hidden message from an image using the correct password.
+- **Secure Message Hiding**: Employs a combination of password-based encryption and a randomly generated salt to securely hide messages within images.
+- **Message Retrieval**: Allows for the safe extraction of hidden messages from images, provided the correct password is supplied.
+- **Enhanced Security**: Utilizes salted encryption to protect against brute-force attacks and ensure that each encryption is unique, even when the same password is reused.
 
 ## Prerequisites
 
-Before using the script, make sure that you install the dependancies:
+To use Ratatoskr, you must first install its dependencies. Ensure Python 3 is installed on your system and then execute the following command:
 
-- pip3 install -r requirements.txt
-
-## Usage
-
-1. Run the script using the command: `python3 ratatoskr.py`
-
-2. Follow the on-screen instructions to choose options and provide necessary inputs.
-
-3. Choose whether to hide a message within an image or reveal a hidden message from an image.
-
-4. If hiding a message, provide a password, the message to be hidden, the input image path, and the output image path.
-
-5. If revealing a message, provide the image with the hidden message and the correct password.
-
-6. Exit the script when done.
+```sh
+pip3 install -r requirements.txt
